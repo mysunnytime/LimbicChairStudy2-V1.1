@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Training.unity
+- path: Assets/SnowMountain.unity
   isLoaded: 1
   isActive: 1

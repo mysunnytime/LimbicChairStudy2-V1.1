@@ -13,3 +13,13 @@ Participant ID: 	Date: 3/17/2018 9:36:26 AM
 Chest not found. Time of the session: 1.77061 s.
 
 
+
+Participant ID: 	Date: 3/17/2018 3:31:43 PM
+Chest not found. Time of the session: 28.14992 s.
+
+
+
+Participant ID: 	Date: 3/17/2018 3:42:52 PM
+Chest not found. Time of the session: 37.75531 s.
+
+
