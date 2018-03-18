@@ -9,13 +9,12 @@ public class ChestControl : MonoBehaviour
 	public Collider player;
 	public GameObject chest_open;
 	public GameObject chest_closed;
-	public Transform position1, position2, position3;
+	public Transform position;
 
 	// Use this for initialization
 	void Start ()
 	{
-		transform.position = position1.position;
-		transform.rotation = position1.rotation;
+        Close();
 	}
 	
 	// Update is called once per frame
