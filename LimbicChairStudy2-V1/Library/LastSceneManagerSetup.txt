@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Training.unity
+- path: Assets/Desert/Dezert.unity
   isLoaded: 1
   isActive: 1

@@ -10,10 +10,15 @@ public enum Interface
 
 public class Flying : MonoBehaviour
 {
-	/******************************************************************************************************************************/
-	/**********             Speed Parameters: You can change them to move faster/slower toward each direction           ***********/
-	/******************************************************************************************************************************/
-	public Interface locomotionInterface;
+    /******************************************************************************************************************************/
+    /**********                         UI Display: Display UI messages on screen when calibrating                      ***********/
+    /******************************************************************************************************************************/
+    public GameObject CalibratingGO;
+
+    /******************************************************************************************************************************/
+    /**********             Speed Parameters: You can change them to move faster/slower toward each direction           ***********/
+    /******************************************************************************************************************************/
+    public Interface locomotionInterface;
 	public float speedLimit = 10;
 	public float speedSensitivity = 15;
 
@@ -62,50 +67,84 @@ public class Flying : MonoBehaviour
 	{
 
 		//Print the initial message on screen
-		if (initializeStep == 0) {
-			Debug.Log ("Ask the user to sit straight and look forward and then press the right controller trigger");
+		if (initializeStep == 0)
+        {
+            CalibratingGO.SetActive(true);
+            Debug.Log ("Ask the user to sit straight and look forward and then press the right controller trigger");
 			initializeStep = 1;
 		}
 
-		//Check if the user pressed trigger
-		if (!viveControllerTriggerStatus && (viveLeftController.GetComponent<SteamVR_TrackedController> ().triggerPressed || viveRightController.GetComponent<SteamVR_TrackedController> ().triggerPressed)) {
-			//Debug.Log ("Right Controller trigger is pressed!");
-			viveControllerTriggerStatus = true;
+        //Check if the user pressed trigger
+        if (!viveControllerTriggerStatus && (viveLeftController.GetComponent<SteamVR_TrackedController>().triggerPressed || viveRightController.GetComponent<SteamVR_TrackedController>().triggerPressed))
+        {
+            //Debug.Log ("Right Controller trigger is pressed!");
+            if (initializeStep == 1)
+            {
+                //Read the Vive Controller data to calculate the neck position
+                float headYaw = viveCameraEye.transform.localRotation.eulerAngles.y;
+                headXo = viveCameraEye.transform.localPosition.x - headWidth * Mathf.Sin(headYaw * Mathf.PI / 180); //Calculate the Neck x Position
+                headYo = viveCameraEye.transform.localPosition.y + headHeight * Mathf.Sin(viveCameraEye.transform.rotation.eulerAngles.x * Mathf.PI / 180); //Calculate the Neck y Position;
+                headZo = viveCameraEye.transform.localPosition.z - headWidth * Mathf.Cos(headYaw * Mathf.PI / 180); //Calculate the Neck y Position
+                headZero = new Vector3(headXo, headYo, headZo);
+                CalibratingGO.SetActive(false);
+                Debug.Log("Great! Now the user can fly");
+                initializeStep = 2;
+            } else if (initializeStep == 2)
+            {
+                Debug.Log("Reseted status.");
+                initializeStep = 0;
+            }
+            viveControllerTriggerStatus = true;
+        }
 
-			//Read the Vive Controller data to calculate the neck position
-			float headYaw = viveCameraEye.transform.localRotation.eulerAngles.y;	
-			headXo = viveCameraEye.transform.localPosition.x - headWidth * Mathf.Sin (headYaw * Mathf.PI / 180); //Calculate the Neck x Position
-			headYo = viveCameraEye.transform.localPosition.y + headHeight * Mathf.Sin (viveCameraEye.transform.rotation.eulerAngles.x * Mathf.PI / 180); //Calculate the Neck y Position;
-			headZo = viveCameraEye.transform.localPosition.z - headWidth * Mathf.Cos (headYaw * Mathf.PI / 180); //Calculate the Neck y Position
-			headZero = new Vector3 (headXo, headYo, headZo);
+        //Check if the user released trigger
+        if (viveControllerTriggerStatus && !(viveLeftController.GetComponent<SteamVR_TrackedController>().triggerPressed || viveRightController.GetComponent<SteamVR_TrackedController>().triggerPressed))
+        {
+            //Debug.Log ("Right Controller pad is released!");
+            viveControllerTriggerStatus = false;
+        }
 
-			Debug.Log ("Great! Now the user can fly");
-			initializeStep = 2;
-		}
+        ////Check if the user pressed trigger
+        //if (!viveControllerTriggerStatus && (viveLeftController.GetComponent<SteamVR_TrackedController>().triggerPressed || viveRightController.GetComponent<SteamVR_TrackedController>().triggerPressed))
+        //{
+        //    //Debug.Log ("Right Controller trigger is pressed!");
+        //    viveControllerTriggerStatus = true;
 
-		//Check if the user released trigger
-		if (viveControllerTriggerStatus && !viveRightController.GetComponent<SteamVR_TrackedController> ().triggerPressed) {
-			//Debug.Log ("Right Controller pad is released!");
-			viveControllerTriggerStatus = false;
-		}
+        //    //Read the Vive Controller data to calculate the neck position
+        //    float headYaw = viveCameraEye.transform.localRotation.eulerAngles.y;
+        //    headXo = viveCameraEye.transform.localPosition.x - headWidth * Mathf.Sin(headYaw * Mathf.PI / 180); //Calculate the Neck x Position
+        //    headYo = viveCameraEye.transform.localPosition.y + headHeight * Mathf.Sin(viveCameraEye.transform.rotation.eulerAngles.x * Mathf.PI / 180); //Calculate the Neck y Position;
+        //    headZo = viveCameraEye.transform.localPosition.z - headWidth * Mathf.Cos(headYaw * Mathf.PI / 180); //Calculate the Neck y Position
+        //    headZero = new Vector3(headXo, headYo, headZo);
 
-		//Check if the user pressed pad
-		if (!viveControllerPadStatus && viveRightController.GetComponent<SteamVR_TrackedController> ().padPressed) {
-			//Debug.Log ("Right Controller trigger is pressed!");
-			viveControllerPadStatus = true;
-			if (handBrakeActivated) { //disable hand brake
-				handBrakeActivated = false;
-			} else { //enable hand brake
-				handBrakeActivated = true;
-			}
-		}
+        //    Debug.Log("Great! Now the user can fly");
+        //    initializeStep = 2;
+        //}
 
-		//Check if the user released pad
-		if (viveControllerPadStatus && !viveRightController.GetComponent<SteamVR_TrackedController> ().padPressed) {
-			//Debug.Log ("Right Controller pad is released!");
-			viveControllerPadStatus = false;
-		}
-	}
+        ////Check if the user released trigger
+        //if (viveControllerTriggerStatus && !viveRightController.GetComponent<SteamVR_TrackedController>().triggerPressed)
+        //{
+        //    //Debug.Log ("Right Controller pad is released!");
+        //    viveControllerTriggerStatus = false;
+        //}
+
+        ////Check if the user pressed pad
+        //if (!viveControllerPadStatus && viveRightController.GetComponent<SteamVR_TrackedController> ().padPressed) {
+        //	//Debug.Log ("Right Controller trigger is pressed!");
+        //	viveControllerPadStatus = true;
+        //	if (handBrakeActivated) { //disable hand brake
+        //		handBrakeActivated = false;
+        //	} else { //enable hand brake
+        //		handBrakeActivated = true;
+        //	}
+        //}
+
+        ////Check if the user released pad
+        //if (viveControllerPadStatus && !viveRightController.GetComponent<SteamVR_TrackedController> ().padPressed) {
+        //	//Debug.Log ("Right Controller pad is released!");
+        //	viveControllerPadStatus = false;
+        //}
+    }
 
 
 	// *** Call this method in update() *** (Uses the Vive HMD & Controller data stored in internal variables to move the player in Virtual Environment)
