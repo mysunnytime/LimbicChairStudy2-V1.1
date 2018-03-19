@@ -10,18 +10,19 @@ public class ProcessManager : MonoBehaviour
 {
     public enum ProcessState
     {
-        PREPAREATION,
+        PREPAREATION_1,
         TASK_1, // take two pictures
-        INTERSECTION_1,
+        PREPAREATION_2,
         TASK_2, // find the treasure chest
-        INTERSECTION_2,
+        END,
     }
 
-    public ProcessState state = ProcessState.PREPAREATION;
+    public ProcessState state = ProcessState.PREPAREATION_1;
     float time = 0.0f;
     public string ParticipantID = "____";
     public ChestControl chest;
     public Flying flying;
+    public Text stateDisplay;
 
     // Use this for initialization
     void Start()
@@ -33,19 +34,20 @@ public class ProcessManager : MonoBehaviour
     void Update()
     {
         Debug.Log("state: " + state);
+        stateDisplay.text = state.ToString();
 
         // reset to task one or task two
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            state = ProcessState.PREPAREATION;
+            state = ProcessState.PREPAREATION_1;
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            state = ProcessState.INTERSECTION_1;
+            state = ProcessState.PREPAREATION_2;
         }
 
         // transition between states
-        if (state == ProcessState.PREPAREATION) {
+        if (state == ProcessState.PREPAREATION_1) {
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 time = 0;
@@ -57,10 +59,10 @@ public class ProcessManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                state = ProcessState.INTERSECTION_1;
+                state = ProcessState.PREPAREATION_2;
             }
         }
-        else if (state == ProcessState.INTERSECTION_1)
+        else if (state == ProcessState.PREPAREATION_2)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -77,14 +79,14 @@ public class ProcessManager : MonoBehaviour
             if (chest.foundTrigger)
             {
                 WriteString("time to find the chest: \t" + (int)time);
-                state = ProcessState.INTERSECTION_2;
+                state = ProcessState.END;
                 chest.foundTrigger = false;
             }
             else if(time > 180)
             {
                 WriteString("did not find the chest in " + (int)time + " s.");
                 chest.gameObject.SetActive(false);
-                state = ProcessState.INTERSECTION_2;
+                state = ProcessState.END;
             }
             time += Time.deltaTime;
         }

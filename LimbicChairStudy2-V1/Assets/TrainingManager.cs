@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class TrainingManager : MonoBehaviour {
     public enum Section
@@ -17,6 +18,7 @@ public class TrainingManager : MonoBehaviour {
     }
 
     public Section section;
+    public Text stateDisplay;
     TrainingState state;
 
 	// Use this for initialization
@@ -27,6 +29,7 @@ public class TrainingManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         Debug.Log(state);
+        stateDisplay.text = state.ToString();
 		if (Input.GetKeyDown("space"))
         {
             if(state == TrainingState.TRAINING)

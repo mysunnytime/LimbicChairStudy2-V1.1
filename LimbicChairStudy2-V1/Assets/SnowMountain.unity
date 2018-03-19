@@ -113,123 +113,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &48754027
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1829908299651972, guid: 205357446a229be478d6c464fc647889,
+--- !u!224 &91488634 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224235443062051850, guid: b9d8756b67732de44905700684f2c623,
     type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 48754028}
-  - component: {fileID: 48754029}
-  m_Layer: 0
-  m_Name: CloudsToyMnager_Emp
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &48754028
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4475313126081934, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 48754027}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -69.99991, z: -493}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1929385849}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &48754029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114635784281363834, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 48754027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2101458953, guid: a60c01cec10e9a4468b7ccb61becaecb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaximunClouds: 300
-  CloudPreset: 1
-  CloudRender: 1
-  CloudDetail: 1
-  TypeClouds: 1
-  realisticShader: {fileID: 4800000, guid: 7ad368ed770217c41b82395d446f2386, type: 3}
-  brightShader: {fileID: 4800000, guid: 8e7b06511ba28d94b8363b087e90ff78, type: 3}
-  projectorMaterial: {fileID: 2100000, guid: fae9b28b8e5671e47b550465dab02b07, type: 2}
-  positionCheckerTime: 0.1
-  SizeFactorPart: 1.2
-  EmissionMult: 1.5
-  _showDebug: 1
-  SoftClouds: 0
-  SpreadDir: {x: -1, y: 0, z: 0}
-  LengthSpread: 1
-  NumberClouds: 60
-  Side: {x: 600, y: 100, z: 200}
-  MaximunVelocity: {x: -10, y: 0, z: 0}
-  VelocityMultipier: 0.85
-  DisappearMultiplier: 2
-  PaintType: 1
-  CloudColor: {r: 0.9, g: 0.9, b: 0.9, a: 0.5}
-  MainColor: {r: 0.8014706, g: 0.78379107, b: 0.78379107, a: 0.3}
-  SecondColor: {r: 0.31, g: 0.31, b: 0.31, a: 1}
-  TintStrength: 80
-  offset: 0.8
-  MaxWidthCloud: 200
-  MaxHeightCloud: 50
-  MaxDepthCloud: 200
-  FixedSize: 0
-  NumberOfShadows: 3
-  CloudsTextAdd:
-  - {fileID: 2800000, guid: 08f28e42a647e2a4cbd32e793359aa3c, type: 3}
-  - {fileID: 2800000, guid: 6e77d387966489d6cb6bb6ba39e09c45, type: 3}
-  - {fileID: 2800000, guid: 2a49aa5b76842305fc65897abcdcf30f, type: 3}
-  - {fileID: 2800000, guid: 1a5d8cd24a805cd44b00c7f1e1e4d287, type: 3}
-  - {fileID: 2800000, guid: e7d408c28925be148bd9ef32f4f28e44, type: 3}
-  - {fileID: 2800000, guid: 12fc7494136c2784e820b038a6e26775, type: 3}
-  CloudsTextBlended:
-  - {fileID: 2800000, guid: eedf011930033df42bf86ffb16ecab58, type: 3}
-  - {fileID: 2800000, guid: 5aa49c4981b056640a1a0e03104ed729, type: 3}
-  - {fileID: 2800000, guid: 94d0b87f81d57434ab83119dfd5558dc, type: 3}
-  - {fileID: 2800000, guid: 472961f99fc8691438c539267dd76d1a, type: 3}
-  - {fileID: 2800000, guid: 587c1727a13db6e4f97e85139efd350f, type: 3}
-  - {fileID: 2800000, guid: 2645426f7fe701f49afc5b042b4b7d50, type: 3}
-  IsAnimate: 0
-  AnimationVelocity: 0.1
-  isFadeInOut: 0
-  fadeRatio: 20
-  alphaRange: 0.3
-  ProceduralTexture: {fileID: 0}
-  PT1TextureWidth: 128
-  PT1TextureHeight: 128
-  PT1TypeNoise: 0
-  PT1Seed: 132
-  PT1ScaleWidth: 1
-  PT1ScaleHeight: 1
-  PT1ScaleFactor: 1
-  PT1Lacunarity: 3
-  PT1FractalIncrement: 0.5
-  PT1Octaves: 7
-  PT1Offset: 1
-  PT1TurbSize: 16
-  PT1TurbLacun: 0.01
-  PT1TurbGain: 0.5
-  PT1turbPower: 5
-  PT1xyPeriod: 0.8
-  PT1HaloEffect: 1.7
-  PT1HaloInsideRadius: 0.1
-  PT1InvertColors: 0
-  PT1ContrastMult: 0
-  PT1UseAlphaTexture: 1
-  PT1AlphaIndex: 0.1
-  fadeRatioPrev: 0
+  m_PrefabInternal: {fileID: 1289830922}
 --- !u!1 &110711937
 GameObject:
   m_ObjectHideFlags: 0
@@ -3835,123 +3723,39 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!1 &228115640
-GameObject:
+--- !u!21 &221503072
+Material:
+  serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1072780541118952, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 228115641}
-  - component: {fileID: 228115642}
-  m_Layer: 0
-  m_Name: CloudsToyMnager_Emp (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &228115641
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4193176235582552, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 228115640}
-  m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -374, y: -69.99991, z: -386}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1929385849}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
---- !u!114 &228115642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114383129567624430, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 228115640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2101458953, guid: a60c01cec10e9a4468b7ccb61becaecb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaximunClouds: 300
-  CloudPreset: 1
-  CloudRender: 1
-  CloudDetail: 1
-  TypeClouds: 1
-  realisticShader: {fileID: 4800000, guid: 7ad368ed770217c41b82395d446f2386, type: 3}
-  brightShader: {fileID: 4800000, guid: 8e7b06511ba28d94b8363b087e90ff78, type: 3}
-  projectorMaterial: {fileID: 2100000, guid: fae9b28b8e5671e47b550465dab02b07, type: 2}
-  positionCheckerTime: 0.1
-  SizeFactorPart: 1.2
-  EmissionMult: 1.5
-  _showDebug: 1
-  SoftClouds: 0
-  SpreadDir: {x: -1, y: 0, z: 0}
-  LengthSpread: 1
-  NumberClouds: 20
-  Side: {x: 200, y: 100, z: 200}
-  MaximunVelocity: {x: -10, y: 0, z: 0}
-  VelocityMultipier: 0.85
-  DisappearMultiplier: 2
-  PaintType: 1
-  CloudColor: {r: 0.9, g: 0.9, b: 0.9, a: 0.5}
-  MainColor: {r: 0.8014706, g: 0.78379107, b: 0.78379107, a: 0.3}
-  SecondColor: {r: 0.31, g: 0.31, b: 0.31, a: 1}
-  TintStrength: 80
-  offset: 0.8
-  MaxWidthCloud: 200
-  MaxHeightCloud: 50
-  MaxDepthCloud: 200
-  FixedSize: 0
-  NumberOfShadows: 3
-  CloudsTextAdd:
-  - {fileID: 2800000, guid: 08f28e42a647e2a4cbd32e793359aa3c, type: 3}
-  - {fileID: 2800000, guid: 6e77d387966489d6cb6bb6ba39e09c45, type: 3}
-  - {fileID: 2800000, guid: 2a49aa5b76842305fc65897abcdcf30f, type: 3}
-  - {fileID: 2800000, guid: 1a5d8cd24a805cd44b00c7f1e1e4d287, type: 3}
-  - {fileID: 2800000, guid: e7d408c28925be148bd9ef32f4f28e44, type: 3}
-  - {fileID: 2800000, guid: 12fc7494136c2784e820b038a6e26775, type: 3}
-  CloudsTextBlended:
-  - {fileID: 2800000, guid: eedf011930033df42bf86ffb16ecab58, type: 3}
-  - {fileID: 2800000, guid: 5aa49c4981b056640a1a0e03104ed729, type: 3}
-  - {fileID: 2800000, guid: 94d0b87f81d57434ab83119dfd5558dc, type: 3}
-  - {fileID: 2800000, guid: 472961f99fc8691438c539267dd76d1a, type: 3}
-  - {fileID: 2800000, guid: 587c1727a13db6e4f97e85139efd350f, type: 3}
-  - {fileID: 2800000, guid: 2645426f7fe701f49afc5b042b4b7d50, type: 3}
-  IsAnimate: 0
-  AnimationVelocity: 0.1
-  isFadeInOut: 0
-  fadeRatio: 20
-  alphaRange: 0.3
-  ProceduralTexture: {fileID: 0}
-  PT1TextureWidth: 128
-  PT1TextureHeight: 128
-  PT1TypeNoise: 0
-  PT1Seed: 132
-  PT1ScaleWidth: 1
-  PT1ScaleHeight: 1
-  PT1ScaleFactor: 1
-  PT1Lacunarity: 3
-  PT1FractalIncrement: 0.5
-  PT1Octaves: 7
-  PT1Offset: 1
-  PT1TurbSize: 16
-  PT1TurbLacun: 0.01
-  PT1TurbGain: 0.5
-  PT1turbPower: 5
-  PT1xyPeriod: 0.8
-  PT1HaloEffect: 1.7
-  PT1HaloInsideRadius: 0.1
-  PT1InvertColors: 0
-  PT1ContrastMult: 0
-  PT1UseAlphaTexture: 1
-  PT1AlphaIndex: 0.1
-  fadeRatioPrev: 0
+  m_Name: Sprites/Default
+  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &313338942 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 155680, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
@@ -3968,6 +3772,12 @@ Skybox:
   m_GameObject: {fileID: 313338942}
   m_Enabled: 1
   m_CustomSkybox: {fileID: 2100000, guid: fb3b9b55c01d2194c816b2d469854e16, type: 2}
+--- !u!114 &331314827 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114612598492843028, guid: 98c56de1096d0ce45b028cc72d60471c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1405964333}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &334251916
 GameObject:
   m_ObjectHideFlags: 0
@@ -4436,123 +4246,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 473266455}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &513537492
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1377294189351968, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 513537493}
-  - component: {fileID: 513537494}
-  m_Layer: 0
-  m_Name: CloudsToyMnager_Emp (6)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &513537493
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4932672033932496, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 513537492}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 496, y: -69.99991, z: 24}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1929385849}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &513537494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114777764148989288, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 513537492}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2101458953, guid: a60c01cec10e9a4468b7ccb61becaecb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaximunClouds: 300
-  CloudPreset: 1
-  CloudRender: 1
-  CloudDetail: 1
-  TypeClouds: 1
-  realisticShader: {fileID: 4800000, guid: 7ad368ed770217c41b82395d446f2386, type: 3}
-  brightShader: {fileID: 4800000, guid: 8e7b06511ba28d94b8363b087e90ff78, type: 3}
-  projectorMaterial: {fileID: 2100000, guid: fae9b28b8e5671e47b550465dab02b07, type: 2}
-  positionCheckerTime: 0.1
-  SizeFactorPart: 1.2
-  EmissionMult: 1.5
-  _showDebug: 1
-  SoftClouds: 0
-  SpreadDir: {x: -1, y: 0, z: 0}
-  LengthSpread: 1
-  NumberClouds: 60
-  Side: {x: 200, y: 100, z: 600}
-  MaximunVelocity: {x: -10, y: 0, z: 0}
-  VelocityMultipier: 0.85
-  DisappearMultiplier: 2
-  PaintType: 1
-  CloudColor: {r: 0.9, g: 0.9, b: 0.9, a: 0.5}
-  MainColor: {r: 0.8014706, g: 0.78379107, b: 0.78379107, a: 0.3}
-  SecondColor: {r: 0.31, g: 0.31, b: 0.31, a: 1}
-  TintStrength: 80
-  offset: 0.8
-  MaxWidthCloud: 200
-  MaxHeightCloud: 50
-  MaxDepthCloud: 200
-  FixedSize: 0
-  NumberOfShadows: 3
-  CloudsTextAdd:
-  - {fileID: 2800000, guid: 08f28e42a647e2a4cbd32e793359aa3c, type: 3}
-  - {fileID: 2800000, guid: 6e77d387966489d6cb6bb6ba39e09c45, type: 3}
-  - {fileID: 2800000, guid: 2a49aa5b76842305fc65897abcdcf30f, type: 3}
-  - {fileID: 2800000, guid: 1a5d8cd24a805cd44b00c7f1e1e4d287, type: 3}
-  - {fileID: 2800000, guid: e7d408c28925be148bd9ef32f4f28e44, type: 3}
-  - {fileID: 2800000, guid: 12fc7494136c2784e820b038a6e26775, type: 3}
-  CloudsTextBlended:
-  - {fileID: 2800000, guid: eedf011930033df42bf86ffb16ecab58, type: 3}
-  - {fileID: 2800000, guid: 5aa49c4981b056640a1a0e03104ed729, type: 3}
-  - {fileID: 2800000, guid: 94d0b87f81d57434ab83119dfd5558dc, type: 3}
-  - {fileID: 2800000, guid: 472961f99fc8691438c539267dd76d1a, type: 3}
-  - {fileID: 2800000, guid: 587c1727a13db6e4f97e85139efd350f, type: 3}
-  - {fileID: 2800000, guid: 2645426f7fe701f49afc5b042b4b7d50, type: 3}
-  IsAnimate: 0
-  AnimationVelocity: 0.1
-  isFadeInOut: 0
-  fadeRatio: 20
-  alphaRange: 0.3
-  ProceduralTexture: {fileID: 0}
-  PT1TextureWidth: 128
-  PT1TextureHeight: 128
-  PT1TypeNoise: 0
-  PT1Seed: 132
-  PT1ScaleWidth: 1
-  PT1ScaleHeight: 1
-  PT1ScaleFactor: 1
-  PT1Lacunarity: 3
-  PT1FractalIncrement: 0.5
-  PT1Octaves: 7
-  PT1Offset: 1
-  PT1TurbSize: 16
-  PT1TurbLacun: 0.01
-  PT1TurbGain: 0.5
-  PT1turbPower: 5
-  PT1xyPeriod: 0.8
-  PT1HaloEffect: 1.7
-  PT1HaloInsideRadius: 0.1
-  PT1InvertColors: 0
-  PT1ContrastMult: 0
-  PT1UseAlphaTexture: 1
-  PT1AlphaIndex: 0.1
-  fadeRatioPrev: 0
 --- !u!1 &574316085
 GameObject:
   m_ObjectHideFlags: 0
@@ -7946,123 +7639,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!1 &633829765
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1708786809446974, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 633829766}
-  - component: {fileID: 633829767}
-  m_Layer: 0
-  m_Name: CloudsToyMnager_Main
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &633829766
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4785339124362170, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 633829765}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 114.6, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1929385849}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &633829767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114348385747961782, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 633829765}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2101458953, guid: a60c01cec10e9a4468b7ccb61becaecb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaximunClouds: 300
-  CloudPreset: 5
-  CloudRender: 1
-  CloudDetail: 2
-  TypeClouds: 6
-  realisticShader: {fileID: 4800000, guid: 7ad368ed770217c41b82395d446f2386, type: 3}
-  brightShader: {fileID: 4800000, guid: 8e7b06511ba28d94b8363b087e90ff78, type: 3}
-  projectorMaterial: {fileID: 2100000, guid: fae9b28b8e5671e47b550465dab02b07, type: 2}
-  positionCheckerTime: 0.1
-  SizeFactorPart: 1.2
-  EmissionMult: 1.5
-  _showDebug: 1
-  SoftClouds: 0
-  SpreadDir: {x: -1, y: 0, z: 0}
-  LengthSpread: 1
-  NumberClouds: 6
-  Side: {x: 1000, y: 200, z: 1000}
-  MaximunVelocity: {x: -20, y: 0, z: 0}
-  VelocityMultipier: 0.85
-  DisappearMultiplier: 2
-  PaintType: 1
-  CloudColor: {r: 0.902, g: 0.902, b: 0.902, a: 0.502}
-  MainColor: {r: 0.796, g: 0.796, b: 0.796, a: 0.302}
-  SecondColor: {r: 0.514, g: 0.514, b: 0.514, a: 1}
-  TintStrength: 80
-  offset: 0.8
-  MaxWidthCloud: 283
-  MaxHeightCloud: 97
-  MaxDepthCloud: 278
-  FixedSize: 0
-  NumberOfShadows: 4
-  CloudsTextAdd:
-  - {fileID: 2800000, guid: 08f28e42a647e2a4cbd32e793359aa3c, type: 3}
-  - {fileID: 2800000, guid: 6e77d387966489d6cb6bb6ba39e09c45, type: 3}
-  - {fileID: 2800000, guid: 2a49aa5b76842305fc65897abcdcf30f, type: 3}
-  - {fileID: 2800000, guid: 1a5d8cd24a805cd44b00c7f1e1e4d287, type: 3}
-  - {fileID: 2800000, guid: e7d408c28925be148bd9ef32f4f28e44, type: 3}
-  - {fileID: 2800000, guid: 12fc7494136c2784e820b038a6e26775, type: 3}
-  CloudsTextBlended:
-  - {fileID: 2800000, guid: eedf011930033df42bf86ffb16ecab58, type: 3}
-  - {fileID: 2800000, guid: 5aa49c4981b056640a1a0e03104ed729, type: 3}
-  - {fileID: 2800000, guid: 94d0b87f81d57434ab83119dfd5558dc, type: 3}
-  - {fileID: 2800000, guid: 472961f99fc8691438c539267dd76d1a, type: 3}
-  - {fileID: 2800000, guid: 587c1727a13db6e4f97e85139efd350f, type: 3}
-  - {fileID: 2800000, guid: 2645426f7fe701f49afc5b042b4b7d50, type: 3}
-  IsAnimate: 1
-  AnimationVelocity: 0.1
-  isFadeInOut: 1
-  fadeRatio: 20
-  alphaRange: 0.3
-  ProceduralTexture: {fileID: 0}
-  PT1TextureWidth: 128
-  PT1TextureHeight: 128
-  PT1TypeNoise: 0
-  PT1Seed: 132
-  PT1ScaleWidth: 1
-  PT1ScaleHeight: 1
-  PT1ScaleFactor: 1
-  PT1Lacunarity: 3
-  PT1FractalIncrement: 0.5
-  PT1Octaves: 7
-  PT1Offset: 1
-  PT1TurbSize: 16
-  PT1TurbLacun: 0.01
-  PT1TurbGain: 0.5
-  PT1turbPower: 5
-  PT1xyPeriod: 0.8
-  PT1HaloEffect: 1.7
-  PT1HaloInsideRadius: 0.1
-  PT1InvertColors: 0
-  PT1ContrastMult: 0
-  PT1UseAlphaTexture: 1
-  PT1AlphaIndex: 0.1
-  fadeRatioPrev: 0
 --- !u!1 &634256427
 GameObject:
   m_ObjectHideFlags: 0
@@ -14880,253 +14456,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!1 &657791160
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1565631165235374, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 657791161}
-  - component: {fileID: 657791162}
-  m_Layer: 0
-  m_Name: CloudsToyMnager_Emp (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &657791161
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4185528627352566, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 657791160}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9, y: -69.99991, z: 500}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1929385849}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &657791162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114845610513791632, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 657791160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2101458953, guid: a60c01cec10e9a4468b7ccb61becaecb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaximunClouds: 300
-  CloudPreset: 1
-  CloudRender: 1
-  CloudDetail: 1
-  TypeClouds: 1
-  realisticShader: {fileID: 4800000, guid: 7ad368ed770217c41b82395d446f2386, type: 3}
-  brightShader: {fileID: 4800000, guid: 8e7b06511ba28d94b8363b087e90ff78, type: 3}
-  projectorMaterial: {fileID: 2100000, guid: fae9b28b8e5671e47b550465dab02b07, type: 2}
-  positionCheckerTime: 0.1
-  SizeFactorPart: 1.2
-  EmissionMult: 1.5
-  _showDebug: 1
-  SoftClouds: 0
-  SpreadDir: {x: -1, y: 0, z: 0}
-  LengthSpread: 1
-  NumberClouds: 60
-  Side: {x: 600, y: 100, z: 200}
-  MaximunVelocity: {x: -10, y: 0, z: 0}
-  VelocityMultipier: 0.85
-  DisappearMultiplier: 2
-  PaintType: 1
-  CloudColor: {r: 0.9, g: 0.9, b: 0.9, a: 0.5}
-  MainColor: {r: 0.8014706, g: 0.78379107, b: 0.78379107, a: 0.3}
-  SecondColor: {r: 0.31, g: 0.31, b: 0.31, a: 1}
-  TintStrength: 80
-  offset: 0.8
-  MaxWidthCloud: 200
-  MaxHeightCloud: 50
-  MaxDepthCloud: 200
-  FixedSize: 0
-  NumberOfShadows: 3
-  CloudsTextAdd:
-  - {fileID: 2800000, guid: 08f28e42a647e2a4cbd32e793359aa3c, type: 3}
-  - {fileID: 2800000, guid: 6e77d387966489d6cb6bb6ba39e09c45, type: 3}
-  - {fileID: 2800000, guid: 2a49aa5b76842305fc65897abcdcf30f, type: 3}
-  - {fileID: 2800000, guid: 1a5d8cd24a805cd44b00c7f1e1e4d287, type: 3}
-  - {fileID: 2800000, guid: e7d408c28925be148bd9ef32f4f28e44, type: 3}
-  - {fileID: 2800000, guid: 12fc7494136c2784e820b038a6e26775, type: 3}
-  CloudsTextBlended:
-  - {fileID: 2800000, guid: eedf011930033df42bf86ffb16ecab58, type: 3}
-  - {fileID: 2800000, guid: 5aa49c4981b056640a1a0e03104ed729, type: 3}
-  - {fileID: 2800000, guid: 94d0b87f81d57434ab83119dfd5558dc, type: 3}
-  - {fileID: 2800000, guid: 472961f99fc8691438c539267dd76d1a, type: 3}
-  - {fileID: 2800000, guid: 587c1727a13db6e4f97e85139efd350f, type: 3}
-  - {fileID: 2800000, guid: 2645426f7fe701f49afc5b042b4b7d50, type: 3}
-  IsAnimate: 0
-  AnimationVelocity: 0.1
-  isFadeInOut: 0
-  fadeRatio: 20
-  alphaRange: 0.3
-  ProceduralTexture: {fileID: 0}
-  PT1TextureWidth: 128
-  PT1TextureHeight: 128
-  PT1TypeNoise: 0
-  PT1Seed: 132
-  PT1ScaleWidth: 1
-  PT1ScaleHeight: 1
-  PT1ScaleFactor: 1
-  PT1Lacunarity: 3
-  PT1FractalIncrement: 0.5
-  PT1Octaves: 7
-  PT1Offset: 1
-  PT1TurbSize: 16
-  PT1TurbLacun: 0.01
-  PT1TurbGain: 0.5
-  PT1turbPower: 5
-  PT1xyPeriod: 0.8
-  PT1HaloEffect: 1.7
-  PT1HaloInsideRadius: 0.1
-  PT1InvertColors: 0
-  PT1ContrastMult: 0
-  PT1UseAlphaTexture: 1
-  PT1AlphaIndex: 0.1
-  fadeRatioPrev: 0
---- !u!43 &693209150
-Mesh:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  serializedVersion: 8
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 24
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 8
-    localAABB:
-      m_Center: {x: 0, y: 0.01, z: 0}
-      m_Extent: {x: 1.65, y: 0, z: 1.275}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000004000100010004000500010005000200020005000600020006000300030006000700030007000000000007000400
-  m_Skin: []
-  m_VertexData:
-    m_CurrentChannels: 13
-    m_VertexCount: 8
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 28
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 288
-    _typelessdata: 0000c03f0ad7233c000090bf000000000000803f0000803f0000803f00000000000000000000c0bf0ad7233c000090bf000000000000803f0000803f0000803f0000803f000000000000c0bf0ad7233c0000903f000000000000803f0000803f0000803f00000000000000000000c03f0ad7233c0000903f000000000000803f0000803f0000803f0000803f000000003333d33f0ad7233c3333a3bf000000000000803f0000803f00000000000000000000803f3333d3bf0ad7233c3333a3bf000000000000803f0000803f000000000000803f0000803f3333d3bf0ad7233c3333a33f000000000000803f0000803f00000000000000000000803f3333d33f0ad7233c3333a33f000000000000803f0000803f000000000000803f0000803f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0.01, z: 0}
-    m_Extent: {x: 1.65, y: 0, z: 1.275}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshOptimized: 0
 --- !u!1 &717194398
 GameObject:
   m_ObjectHideFlags: 0
@@ -18694,123 +18023,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 835938436}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &841934155
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1511569133850270, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 841934156}
-  - component: {fileID: 841934157}
-  m_Layer: 0
-  m_Name: CloudsToyMnager_Emp (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &841934156
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4247871621169704, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 841934155}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -508, y: -69.99991, z: 8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1929385849}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &841934157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114785127968913674, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 841934155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2101458953, guid: a60c01cec10e9a4468b7ccb61becaecb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaximunClouds: 300
-  CloudPreset: 1
-  CloudRender: 1
-  CloudDetail: 1
-  TypeClouds: 1
-  realisticShader: {fileID: 4800000, guid: 7ad368ed770217c41b82395d446f2386, type: 3}
-  brightShader: {fileID: 4800000, guid: 8e7b06511ba28d94b8363b087e90ff78, type: 3}
-  projectorMaterial: {fileID: 2100000, guid: fae9b28b8e5671e47b550465dab02b07, type: 2}
-  positionCheckerTime: 0.1
-  SizeFactorPart: 1.2
-  EmissionMult: 1.5
-  _showDebug: 1
-  SoftClouds: 0
-  SpreadDir: {x: -1, y: 0, z: 0}
-  LengthSpread: 1
-  NumberClouds: 60
-  Side: {x: 200, y: 100, z: 600}
-  MaximunVelocity: {x: -10, y: 0, z: 0}
-  VelocityMultipier: 0.85
-  DisappearMultiplier: 2
-  PaintType: 1
-  CloudColor: {r: 0.9, g: 0.9, b: 0.9, a: 0.5}
-  MainColor: {r: 0.8014706, g: 0.78379107, b: 0.78379107, a: 0.3}
-  SecondColor: {r: 0.31, g: 0.31, b: 0.31, a: 1}
-  TintStrength: 80
-  offset: 0.8
-  MaxWidthCloud: 200
-  MaxHeightCloud: 50
-  MaxDepthCloud: 200
-  FixedSize: 0
-  NumberOfShadows: 3
-  CloudsTextAdd:
-  - {fileID: 2800000, guid: 08f28e42a647e2a4cbd32e793359aa3c, type: 3}
-  - {fileID: 2800000, guid: 6e77d387966489d6cb6bb6ba39e09c45, type: 3}
-  - {fileID: 2800000, guid: 2a49aa5b76842305fc65897abcdcf30f, type: 3}
-  - {fileID: 2800000, guid: 1a5d8cd24a805cd44b00c7f1e1e4d287, type: 3}
-  - {fileID: 2800000, guid: e7d408c28925be148bd9ef32f4f28e44, type: 3}
-  - {fileID: 2800000, guid: 12fc7494136c2784e820b038a6e26775, type: 3}
-  CloudsTextBlended:
-  - {fileID: 2800000, guid: eedf011930033df42bf86ffb16ecab58, type: 3}
-  - {fileID: 2800000, guid: 5aa49c4981b056640a1a0e03104ed729, type: 3}
-  - {fileID: 2800000, guid: 94d0b87f81d57434ab83119dfd5558dc, type: 3}
-  - {fileID: 2800000, guid: 472961f99fc8691438c539267dd76d1a, type: 3}
-  - {fileID: 2800000, guid: 587c1727a13db6e4f97e85139efd350f, type: 3}
-  - {fileID: 2800000, guid: 2645426f7fe701f49afc5b042b4b7d50, type: 3}
-  IsAnimate: 0
-  AnimationVelocity: 0.1
-  isFadeInOut: 0
-  fadeRatio: 20
-  alphaRange: 0.3
-  ProceduralTexture: {fileID: 0}
-  PT1TextureWidth: 128
-  PT1TextureHeight: 128
-  PT1TypeNoise: 0
-  PT1Seed: 132
-  PT1ScaleWidth: 1
-  PT1ScaleHeight: 1
-  PT1ScaleFactor: 1
-  PT1Lacunarity: 3
-  PT1FractalIncrement: 0.5
-  PT1Octaves: 7
-  PT1Offset: 1
-  PT1TurbSize: 16
-  PT1TurbLacun: 0.01
-  PT1TurbGain: 0.5
-  PT1turbPower: 5
-  PT1xyPeriod: 0.8
-  PT1HaloEffect: 1.7
-  PT1HaloInsideRadius: 0.1
-  PT1InvertColors: 0
-  PT1ContrastMult: 0
-  PT1UseAlphaTexture: 1
-  PT1AlphaIndex: 0.1
-  fadeRatioPrev: 0
 --- !u!1 &868166942
 GameObject:
   m_ObjectHideFlags: 0
@@ -18907,123 +18119,58 @@ MonoBehaviour:
   padPressed: 0
   padTouched: 0
   gripped: 0
---- !u!1 &1025324227
-GameObject:
+--- !u!1001 &1001046361
+Prefab:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1264503369772306, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1025324228}
-  - component: {fileID: 1025324229}
-  m_Layer: 0
-  m_Name: CloudsToyMnager_Emp (7)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1025324228
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4326806671052288, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1025324227}
-  m_LocalRotation: {x: -0, y: 0.38268343, z: -0, w: 0.92387956}
-  m_LocalPosition: {x: 394, y: -69.99991, z: 375}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1929385849}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
---- !u!114 &1025324229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114674246842251496, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1025324227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2101458953, guid: a60c01cec10e9a4468b7ccb61becaecb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaximunClouds: 300
-  CloudPreset: 1
-  CloudRender: 1
-  CloudDetail: 1
-  TypeClouds: 1
-  realisticShader: {fileID: 4800000, guid: 7ad368ed770217c41b82395d446f2386, type: 3}
-  brightShader: {fileID: 4800000, guid: 8e7b06511ba28d94b8363b087e90ff78, type: 3}
-  projectorMaterial: {fileID: 2100000, guid: fae9b28b8e5671e47b550465dab02b07, type: 2}
-  positionCheckerTime: 0.1
-  SizeFactorPart: 1.2
-  EmissionMult: 1.5
-  _showDebug: 1
-  SoftClouds: 0
-  SpreadDir: {x: -1, y: 0, z: 0}
-  LengthSpread: 1
-  NumberClouds: 20
-  Side: {x: 200, y: 100, z: 200}
-  MaximunVelocity: {x: -10, y: 0, z: 0}
-  VelocityMultipier: 0.85
-  DisappearMultiplier: 2
-  PaintType: 1
-  CloudColor: {r: 0.9, g: 0.9, b: 0.9, a: 0.5}
-  MainColor: {r: 0.8014706, g: 0.78379107, b: 0.78379107, a: 0.3}
-  SecondColor: {r: 0.31, g: 0.31, b: 0.31, a: 1}
-  TintStrength: 80
-  offset: 0.8
-  MaxWidthCloud: 200
-  MaxHeightCloud: 50
-  MaxDepthCloud: 200
-  FixedSize: 0
-  NumberOfShadows: 3
-  CloudsTextAdd:
-  - {fileID: 2800000, guid: 08f28e42a647e2a4cbd32e793359aa3c, type: 3}
-  - {fileID: 2800000, guid: 6e77d387966489d6cb6bb6ba39e09c45, type: 3}
-  - {fileID: 2800000, guid: 2a49aa5b76842305fc65897abcdcf30f, type: 3}
-  - {fileID: 2800000, guid: 1a5d8cd24a805cd44b00c7f1e1e4d287, type: 3}
-  - {fileID: 2800000, guid: e7d408c28925be148bd9ef32f4f28e44, type: 3}
-  - {fileID: 2800000, guid: 12fc7494136c2784e820b038a6e26775, type: 3}
-  CloudsTextBlended:
-  - {fileID: 2800000, guid: eedf011930033df42bf86ffb16ecab58, type: 3}
-  - {fileID: 2800000, guid: 5aa49c4981b056640a1a0e03104ed729, type: 3}
-  - {fileID: 2800000, guid: 94d0b87f81d57434ab83119dfd5558dc, type: 3}
-  - {fileID: 2800000, guid: 472961f99fc8691438c539267dd76d1a, type: 3}
-  - {fileID: 2800000, guid: 587c1727a13db6e4f97e85139efd350f, type: 3}
-  - {fileID: 2800000, guid: 2645426f7fe701f49afc5b042b4b7d50, type: 3}
-  IsAnimate: 0
-  AnimationVelocity: 0.1
-  isFadeInOut: 0
-  fadeRatio: 20
-  alphaRange: 0.3
-  ProceduralTexture: {fileID: 0}
-  PT1TextureWidth: 128
-  PT1TextureHeight: 128
-  PT1TypeNoise: 0
-  PT1Seed: 132
-  PT1ScaleWidth: 1
-  PT1ScaleHeight: 1
-  PT1ScaleFactor: 1
-  PT1Lacunarity: 3
-  PT1FractalIncrement: 0.5
-  PT1Octaves: 7
-  PT1Offset: 1
-  PT1TurbSize: 16
-  PT1TurbLacun: 0.01
-  PT1TurbGain: 0.5
-  PT1turbPower: 5
-  PT1xyPeriod: 0.8
-  PT1HaloEffect: 1.7
-  PT1HaloInsideRadius: 0.1
-  PT1InvertColors: 0
-  PT1ContrastMult: 0
-  PT1UseAlphaTexture: 1
-  PT1AlphaIndex: 0.1
-  fadeRatioPrev: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4562963843843336, guid: 9aa4ea9c785576248b6b490eb274ab06, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.5906067
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562963843843336, guid: 9aa4ea9c785576248b6b490eb274ab06, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -11.859459
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562963843843336, guid: 9aa4ea9c785576248b6b490eb274ab06, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 33.504974
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562963843843336, guid: 9aa4ea9c785576248b6b490eb274ab06, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562963843843336, guid: 9aa4ea9c785576248b6b490eb274ab06, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562963843843336, guid: 9aa4ea9c785576248b6b490eb274ab06, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562963843843336, guid: 9aa4ea9c785576248b6b490eb274ab06, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562963843843336, guid: 9aa4ea9c785576248b6b490eb274ab06, type: 2}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 114615578737290602, guid: 9aa4ea9c785576248b6b490eb274ab06,
+        type: 2}
+      propertyPath: chest
+      value: 
+      objectReference: {fileID: 1064759569}
+    - target: {fileID: 114615578737290602, guid: 9aa4ea9c785576248b6b490eb274ab06,
+        type: 2}
+      propertyPath: stateDisplay
+      value: 
+      objectReference: {fileID: 331314827}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 9aa4ea9c785576248b6b490eb274ab06, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1032465388
 GameObject:
   m_ObjectHideFlags: 0
@@ -19150,7 +18297,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1064759569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22809,39 +21956,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1136430462}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &1164448691
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Sprites/Default
-  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1167368535
 GameObject:
   m_ObjectHideFlags: 0
@@ -23035,7 +22149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CalibratingGO: {fileID: 1943363787}
-  locomotionInterface: 1
+  locomotionInterface: 0
   speedLimit: 10
   speedSensitivity: 15
   viveCameraEye: {fileID: 976501163}
@@ -23152,6 +22266,48 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9d8756b67732de44905700684f2c623, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1294575297
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4602653091491416, guid: fc3773707fc003145a7c6587803bbb6a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602653091491416, guid: fc3773707fc003145a7c6587803bbb6a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 69.99991
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602653091491416, guid: fc3773707fc003145a7c6587803bbb6a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602653091491416, guid: fc3773707fc003145a7c6587803bbb6a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602653091491416, guid: fc3773707fc003145a7c6587803bbb6a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602653091491416, guid: fc3773707fc003145a7c6587803bbb6a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602653091491416, guid: fc3773707fc003145a7c6587803bbb6a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602653091491416, guid: fc3773707fc003145a7c6587803bbb6a, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: fc3773707fc003145a7c6587803bbb6a, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1314322511
 GameObject:
@@ -23303,11 +22459,11 @@ Prefab:
     - target: {fileID: 2348914, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1164448691}
+      objectReference: {fileID: 221503072}
     - target: {fileID: 3380982, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 693209150}
+      objectReference: {fileID: 2018881520}
     m_RemovedComponents:
     - {fileID: 11420968, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
     - {fileID: 11411836, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
@@ -23407,6 +22563,106 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1350381497}
   m_Mesh: {fileID: 4300000, guid: dd8ebbdcc572196408a6805681c6a297, type: 3}
+--- !u!1001 &1405964333
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 91488634}
+    m_Modifications:
+    - target: {fileID: 224350715829585514, guid: 98c56de1096d0ce45b028cc72d60471c,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224350715829585514, guid: 98c56de1096d0ce45b028cc72d60471c,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224350715829585514, guid: 98c56de1096d0ce45b028cc72d60471c,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224350715829585514, guid: 98c56de1096d0ce45b028cc72d60471c,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224350715829585514, guid: 98c56de1096d0ce45b028cc72d60471c,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224350715829585514, guid: 98c56de1096d0ce45b028cc72d60471c,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224350715829585514, guid: 98c56de1096d0ce45b028cc72d60471c,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224350715829585514, guid: 98c56de1096d0ce45b028cc72d60471c,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224350715829585514, guid: 98c56de1096d0ce45b028cc72d60471c,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224350715829585514, guid: 98c56de1096d0ce45b028cc72d60471c,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 224350715829585514, guid: 98c56de1096d0ce45b028cc72d60471c,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 224350715829585514, guid: 98c56de1096d0ce45b028cc72d60471c,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 224350715829585514, guid: 98c56de1096d0ce45b028cc72d60471c,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224350715829585514, guid: 98c56de1096d0ce45b028cc72d60471c,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224350715829585514, guid: 98c56de1096d0ce45b028cc72d60471c,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224350715829585514, guid: 98c56de1096d0ce45b028cc72d60471c,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224350715829585514, guid: 98c56de1096d0ce45b028cc72d60471c,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224350715829585514, guid: 98c56de1096d0ce45b028cc72d60471c,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 98c56de1096d0ce45b028cc72d60471c, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1414649808
 GameObject:
   m_ObjectHideFlags: 0
@@ -23527,123 +22783,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1414649808}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1425899144
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1708393388185846, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1425899145}
-  - component: {fileID: 1425899146}
-  m_Layer: 0
-  m_Name: CloudsToyMnager_Emp (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1425899145
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4641439328003876, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1425899144}
-  m_LocalRotation: {x: -0, y: 0.38268343, z: -0, w: 0.92387956}
-  m_LocalPosition: {x: 386, y: -69.99991, z: -395}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1929385849}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
---- !u!114 &1425899146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114902653811543978, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1425899144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2101458953, guid: a60c01cec10e9a4468b7ccb61becaecb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaximunClouds: 300
-  CloudPreset: 1
-  CloudRender: 1
-  CloudDetail: 1
-  TypeClouds: 1
-  realisticShader: {fileID: 4800000, guid: 7ad368ed770217c41b82395d446f2386, type: 3}
-  brightShader: {fileID: 4800000, guid: 8e7b06511ba28d94b8363b087e90ff78, type: 3}
-  projectorMaterial: {fileID: 2100000, guid: fae9b28b8e5671e47b550465dab02b07, type: 2}
-  positionCheckerTime: 0.1
-  SizeFactorPart: 1.2
-  EmissionMult: 1.5
-  _showDebug: 1
-  SoftClouds: 0
-  SpreadDir: {x: -1, y: 0, z: 0}
-  LengthSpread: 1
-  NumberClouds: 20
-  Side: {x: 200, y: 100, z: 200}
-  MaximunVelocity: {x: -10, y: 0, z: 0}
-  VelocityMultipier: 0.85
-  DisappearMultiplier: 2
-  PaintType: 1
-  CloudColor: {r: 0.9, g: 0.9, b: 0.9, a: 0.5}
-  MainColor: {r: 0.8014706, g: 0.78379107, b: 0.78379107, a: 0.3}
-  SecondColor: {r: 0.31, g: 0.31, b: 0.31, a: 1}
-  TintStrength: 80
-  offset: 0.8
-  MaxWidthCloud: 200
-  MaxHeightCloud: 50
-  MaxDepthCloud: 200
-  FixedSize: 0
-  NumberOfShadows: 3
-  CloudsTextAdd:
-  - {fileID: 2800000, guid: 08f28e42a647e2a4cbd32e793359aa3c, type: 3}
-  - {fileID: 2800000, guid: 6e77d387966489d6cb6bb6ba39e09c45, type: 3}
-  - {fileID: 2800000, guid: 2a49aa5b76842305fc65897abcdcf30f, type: 3}
-  - {fileID: 2800000, guid: 1a5d8cd24a805cd44b00c7f1e1e4d287, type: 3}
-  - {fileID: 2800000, guid: e7d408c28925be148bd9ef32f4f28e44, type: 3}
-  - {fileID: 2800000, guid: 12fc7494136c2784e820b038a6e26775, type: 3}
-  CloudsTextBlended:
-  - {fileID: 2800000, guid: eedf011930033df42bf86ffb16ecab58, type: 3}
-  - {fileID: 2800000, guid: 5aa49c4981b056640a1a0e03104ed729, type: 3}
-  - {fileID: 2800000, guid: 94d0b87f81d57434ab83119dfd5558dc, type: 3}
-  - {fileID: 2800000, guid: 472961f99fc8691438c539267dd76d1a, type: 3}
-  - {fileID: 2800000, guid: 587c1727a13db6e4f97e85139efd350f, type: 3}
-  - {fileID: 2800000, guid: 2645426f7fe701f49afc5b042b4b7d50, type: 3}
-  IsAnimate: 0
-  AnimationVelocity: 0.1
-  isFadeInOut: 0
-  fadeRatio: 20
-  alphaRange: 0.3
-  ProceduralTexture: {fileID: 0}
-  PT1TextureWidth: 128
-  PT1TextureHeight: 128
-  PT1TypeNoise: 0
-  PT1Seed: 132
-  PT1ScaleWidth: 1
-  PT1ScaleHeight: 1
-  PT1ScaleFactor: 1
-  PT1Lacunarity: 3
-  PT1FractalIncrement: 0.5
-  PT1Octaves: 7
-  PT1Offset: 1
-  PT1TurbSize: 16
-  PT1TurbLacun: 0.01
-  PT1TurbGain: 0.5
-  PT1turbPower: 5
-  PT1xyPeriod: 0.8
-  PT1HaloEffect: 1.7
-  PT1HaloInsideRadius: 0.1
-  PT1InvertColors: 0
-  PT1ContrastMult: 0
-  PT1UseAlphaTexture: 1
-  PT1AlphaIndex: 0.1
-  fadeRatioPrev: 0
 --- !u!1 &1453881601
 GameObject:
   m_ObjectHideFlags: 0
@@ -34096,53 +33235,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1624015948
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1240434480423998, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1624015950}
-  - component: {fileID: 1624015949}
-  m_Layer: 0
-  m_Name: ProcessManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1624015949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114012438160854808, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1624015948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2893d24cbf6749944b82d79ee947d9c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  state: 0
-  ParticipantID: 
-  chest: {fileID: 1064759569}
-  flying: {fileID: 0}
---- !u!4 &1624015950
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4982803849913180, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1624015948}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5906067, y: -11.859459, z: 33.504974}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1731484568
 GameObject:
   m_ObjectHideFlags: 0
@@ -34349,45 +33441,6 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
   m_PrefabInternal: {fileID: 1344634512}
---- !u!1 &1929385848
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1531335214607052, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1929385849}
-  m_Layer: 0
-  m_Name: Clouds
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1929385849
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4369774783182084, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1929385848}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 69.99991, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 633829766}
-  - {fileID: 48754028}
-  - {fileID: 228115641}
-  - {fileID: 841934156}
-  - {fileID: 1943702450}
-  - {fileID: 657791161}
-  - {fileID: 1425899145}
-  - {fileID: 513537493}
-  - {fileID: 1025324228}
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1930612384
 GameObject:
   m_ObjectHideFlags: 0
@@ -34513,123 +33566,136 @@ GameObject:
   m_PrefabParentObject: {fileID: 1980582243366170, guid: b9d8756b67732de44905700684f2c623,
     type: 2}
   m_PrefabInternal: {fileID: 1289830922}
---- !u!1 &1943702449
-GameObject:
+--- !u!43 &2018881520
+Mesh:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1880576741410272, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1943702450}
-  - component: {fileID: 1943702451}
-  m_Layer: 0
-  m_Name: CloudsToyMnager_Emp (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1943702450
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4717848012852458, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1943702449}
-  m_LocalRotation: {x: -0, y: 0.38268343, z: -0, w: 0.92387956}
-  m_LocalPosition: {x: -393, y: -69.99991, z: 387}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1929385849}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
---- !u!114 &1943702451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114651317827174310, guid: 205357446a229be478d6c464fc647889,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1943702449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 2101458953, guid: a60c01cec10e9a4468b7ccb61becaecb, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  MaximunClouds: 300
-  CloudPreset: 1
-  CloudRender: 1
-  CloudDetail: 1
-  TypeClouds: 1
-  realisticShader: {fileID: 4800000, guid: 7ad368ed770217c41b82395d446f2386, type: 3}
-  brightShader: {fileID: 4800000, guid: 8e7b06511ba28d94b8363b087e90ff78, type: 3}
-  projectorMaterial: {fileID: 2100000, guid: fae9b28b8e5671e47b550465dab02b07, type: 2}
-  positionCheckerTime: 0.1
-  SizeFactorPart: 1.2
-  EmissionMult: 1.5
-  _showDebug: 1
-  SoftClouds: 0
-  SpreadDir: {x: -1, y: 0, z: 0}
-  LengthSpread: 1
-  NumberClouds: 20
-  Side: {x: 200, y: 100, z: 200}
-  MaximunVelocity: {x: -10, y: 0, z: 0}
-  VelocityMultipier: 0.85
-  DisappearMultiplier: 2
-  PaintType: 1
-  CloudColor: {r: 0.9, g: 0.9, b: 0.9, a: 0.5}
-  MainColor: {r: 0.8014706, g: 0.78379107, b: 0.78379107, a: 0.3}
-  SecondColor: {r: 0.31, g: 0.31, b: 0.31, a: 1}
-  TintStrength: 80
-  offset: 0.8
-  MaxWidthCloud: 200
-  MaxHeightCloud: 50
-  MaxDepthCloud: 200
-  FixedSize: 0
-  NumberOfShadows: 3
-  CloudsTextAdd:
-  - {fileID: 2800000, guid: 08f28e42a647e2a4cbd32e793359aa3c, type: 3}
-  - {fileID: 2800000, guid: 6e77d387966489d6cb6bb6ba39e09c45, type: 3}
-  - {fileID: 2800000, guid: 2a49aa5b76842305fc65897abcdcf30f, type: 3}
-  - {fileID: 2800000, guid: 1a5d8cd24a805cd44b00c7f1e1e4d287, type: 3}
-  - {fileID: 2800000, guid: e7d408c28925be148bd9ef32f4f28e44, type: 3}
-  - {fileID: 2800000, guid: 12fc7494136c2784e820b038a6e26775, type: 3}
-  CloudsTextBlended:
-  - {fileID: 2800000, guid: eedf011930033df42bf86ffb16ecab58, type: 3}
-  - {fileID: 2800000, guid: 5aa49c4981b056640a1a0e03104ed729, type: 3}
-  - {fileID: 2800000, guid: 94d0b87f81d57434ab83119dfd5558dc, type: 3}
-  - {fileID: 2800000, guid: 472961f99fc8691438c539267dd76d1a, type: 3}
-  - {fileID: 2800000, guid: 587c1727a13db6e4f97e85139efd350f, type: 3}
-  - {fileID: 2800000, guid: 2645426f7fe701f49afc5b042b4b7d50, type: 3}
-  IsAnimate: 0
-  AnimationVelocity: 0.1
-  isFadeInOut: 0
-  fadeRatio: 20
-  alphaRange: 0.3
-  ProceduralTexture: {fileID: 0}
-  PT1TextureWidth: 128
-  PT1TextureHeight: 128
-  PT1TypeNoise: 0
-  PT1Seed: 132
-  PT1ScaleWidth: 1
-  PT1ScaleHeight: 1
-  PT1ScaleFactor: 1
-  PT1Lacunarity: 3
-  PT1FractalIncrement: 0.5
-  PT1Octaves: 7
-  PT1Offset: 1
-  PT1TurbSize: 16
-  PT1TurbLacun: 0.01
-  PT1TurbGain: 0.5
-  PT1turbPower: 5
-  PT1xyPeriod: 0.8
-  PT1HaloEffect: 1.7
-  PT1HaloInsideRadius: 0.1
-  PT1InvertColors: 0
-  PT1ContrastMult: 0
-  PT1UseAlphaTexture: 1
-  PT1AlphaIndex: 0.1
-  fadeRatioPrev: 0
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 24
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 8
+    localAABB:
+      m_Center: {x: 0, y: 0.01, z: 0}
+      m_Extent: {x: 1.65, y: 0, z: 1.275}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000004000100010004000500010005000200020005000600020006000300030006000700030007000000000007000400
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 13
+    m_VertexCount: 8
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 28
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 288
+    _typelessdata: 0000c03f0ad7233c000090bf000000000000803f0000803f0000803f00000000000000000000c0bf0ad7233c000090bf000000000000803f0000803f0000803f0000803f000000000000c0bf0ad7233c0000903f000000000000803f0000803f0000803f00000000000000000000c03f0ad7233c0000903f000000000000803f0000803f0000803f0000803f000000003333d33f0ad7233c3333a3bf000000000000803f0000803f00000000000000000000803f3333d3bf0ad7233c3333a3bf000000000000803f0000803f000000000000803f0000803f3333d3bf0ad7233c3333a33f000000000000803f0000803f00000000000000000000803f3333d33f0ad7233c3333a33f000000000000803f0000803f000000000000803f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.01, z: 0}
+    m_Extent: {x: 1.65, y: 0, z: 1.275}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
 --- !u!1 &2045001681
 GameObject:
   m_ObjectHideFlags: 0
